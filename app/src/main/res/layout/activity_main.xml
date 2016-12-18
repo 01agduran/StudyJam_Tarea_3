@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alvaro.calculadora.MainActivity">
+
+    <LinearLayout
+      android:id="@+id/llCeros"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_toLeftOf="@+id/llAcciones"
+      android:layout_alignParentBottom="true"
+      >
+
+        <TextView
+            android:id="@+id/txv_coma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txV_coma"
+            android:textSize="@dimen/dimension_numero"
+            android:padding="@dimen/dimension_numero"
+            android:background="@color/Color_Numeros"
+            android:textColor="@color/Color_numero"
+            android:layout_alignParentBottom="true"
+
+            />
+
+        <TextView
+            android:id="@+id/txv_cero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txV_cero"
+            android:textSize="@dimen/dimension_numero"
+            android:padding="@dimen/dimension_numero"
+            android:background="@color/Color_Numeros"
+            android:textColor="@color/Color_numero"
+            android:layout_toRightOf="@+id/txv_coma"
+            android:layout_alignParentBottom="true"
+            android:onClick="CrearCadena"
+            />
+
+        <TextView
+            android:id="@+id/txv_igual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txV_igual"
+            android:textSize="@dimen/dimension_numero"
+            android:padding="@dimen/dimension_numero"
+            android:background="@color/Color_Numeros"
+            android:textColor="@color/Color_numero"
+            android:layout_toRightOf="@+id/txv_cero"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="calcular"
+            />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/txv_uno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txV_uno"
+        android:textSize="@dimen/dimension_numero"
+        android:padding="@dimen/dimension_numero"
+        android:background="@color/Color_Numeros"
+        android:textColor="@color/Color_numero"
+        android:layout_above="@+id/llCeros"
+        android:onClick="CrearCadena"
+        />
+
+    <TextView
+        android:id="@+id/txv_dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txV_dos"
+        android:textSize="@dimen/dimension_numero"
+        android:padding="@dimen/dimension_numero"
+        android:background="@color/Color_Numeros"
+        android:textColor="@color/Color_numero"
+        android:layout_above="@+id/llCeros"
+        android:layout_toRightOf="@id/txv_uno"
+        android:onClick="CrearCadena"
+        />
+
+    <TextView
+        android:id="@+id/txv_tres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txV_tres"
+        android:textSize="@dimen/dimension_numero"
+        android:padding="@dimen/dimension_numero"
+        android:background="@color/Color_Numeros"
+        android:textColor="@color/Color_numero"
+        android:layout_above="@+id/llCeros"
+        android:layout_toRightOf="@id/txv_dos"
+        android:onClick="CrearCadena"
+        />
+
+    <TextView
+        android:id="@+id/txv_cuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txV_cuatro"
+        android:textSize="@dimen/dimension_numero"
+        android:padding="@dimen/dimension_numero"
+        android:background="@color/Color_Numeros"
+        android:textColor="@color/Color_numero"
+        android:layout_above="@+id/txv_uno"
+        android:onClick="CrearCadena"
+        />
+    <TextView
+        android:id="@+id/txv_cinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txV_cinco"
+        android:textSize="@dimen/dimension_numero"
+        android:padding="@dimen/dimension_numero"
+        android:background="@color/Color_Numeros"
+        android:textColor="@color/Color_numero"
+        android:layout_above="@+id/txv_dos"
+        android:layout_toRightOf="@id/txv_cuatro"
+        android:onClick="CrearCadena"
+        />
+
+    <TextView
+        android:id="@+id/txv_seis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txV_seis"
+        android:textSize="@dimen/dimension_numero"
+        android:padding="@dimen/dimension_numero"
+        android:background="@color/Color_Numeros"
+        android:textColor="@color/Color_numero"
+        android:layout_above="@+id/txv_tres"
+        android:layout_toRightOf="@id/txv_cinco"
+        android:onClick="CrearCadena"
+        />
+
+    <TextView
+        android:id="@+id/txv_siete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txV_siete"
+        android:textSize="@dimen/dimension_numero"
+        android:padding="@dimen/dimension_numero"
+        android:background="@color/Color_Numeros"
+        android:textColor="@color/Color_numero"
+        android:layout_above="@+id/txv_cuatro"
+        android:onClick="CrearCadena"
+         />
+
+    <TextView
+        android:id="@+id/txv_ocho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txV_ocho"
+        android:textSize="@dimen/dimension_numero"
+        android:padding="@dimen/dimension_numero"
+        android:background="@color/Color_Numeros"
+        android:textColor="@color/Color_numero"
+        android:layout_above="@+id/txv_cinco"
+        android:layout_toRightOf="@id/txv_siete"
+        android:onClick="CrearCadena"
+        />
+
+    <TextView
+        android:id="@+id/txv_nueve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txV_nueve"
+        android:textSize="@dimen/dimension_numero"
+        android:padding="@dimen/dimension_numero"
+        android:background="@color/Color_Numeros"
+        android:textColor="@color/Color_numero"
+        android:layout_above="@+id/txv_seis"
+        android:layout_toRightOf="@id/txv_ocho"
+        android:onClick="CrearCadena"
+        />
+
+    <TextView
+        android:id="@+id/txv_reultado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txv_siete"
+        android:gravity="right|center_vertical"
+        android:padding="20dp"
+        android:textSize="50sp"
+        android:text="@string/txV_resultado"
+        />
+
+    <LinearLayout
+        android:id="@+id/llAcciones"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/txv_nueve"
+        android:layout_below="@+id/txv_reultado">
+
+        <TextView
+            android:id="@+id/txv_ce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txV_ce"
+            android:textSize="@dimen/dimension_operadores"
+            android:padding="@dimen/dimension_operadores"
+            android:background="@color/Color_Operaciones"
+            android:textColor="@color/Color_numero"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="CE"
+            />
+
+        <TextView
+            android:id="@+id/txv_dividir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txV_division"
+            android:textSize="@dimen/dimension_operadores"
+            android:padding="@dimen/dimension_operadores"
+            android:background="@color/Color_Operaciones"
+            android:textColor="@color/Color_numero"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="CrearCadena"
+            />
+
+        <TextView
+            android:id="@+id/txv_multiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txV_multiplicar"
+            android:textSize="@dimen/dimension_operadores"
+            android:padding="@dimen/dimension_operadores"
+            android:background="@color/Color_Operaciones"
+            android:textColor="@color/Color_numero"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:layout_gravity="center"
+            android:onClick="CrearCadena"
+
+
+            />
+        <TextView
+            android:id="@+id/txv_sumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txV_sumar"
+            android:textSize="@dimen/dimension_operadores"
+            android:padding="@dimen/dimension_operadores"
+            android:background="@color/Color_Operaciones"
+            android:textColor="@color/Color_numero"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="CrearCadena"/>
+
+        <TextView
+            android:id="@+id/txv_restar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txV_restar"
+            android:textSize="@dimen/dimension_operadores"
+            android:padding="@dimen/dimension_operadores"
+            android:background="@color/Color_Operaciones"
+            android:textColor="@color/Color_numero"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingRight="35dp"
+            android:paddingLeft="35dp"
+            android:onClick="CrearCadena"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Color_Barra"
+        android:layout_below="@+id/txv_reultado"
+        android:layout_toRightOf="@+id/llAcciones"
+        android:gravity="center"
+
+
+        >
+
+
+    </LinearLayout>
+</RelativeLayout>

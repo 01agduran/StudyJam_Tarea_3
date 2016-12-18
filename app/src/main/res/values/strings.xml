@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="txV_coma">,</string>
+    <string name="txV_cero">0</string>
+    <string name="txV_igual">=</string>
+    <string name="txV_uno">1</string>
+    <string name="txV_dos">2</string>
+    <string name="txV_tres">3</string>
+    <string name="txV_cuatro">4</string>
+    <string name="txV_cinco">5</string>
+    <string name="txV_seis">6</string>
+    <string name="txV_siete">7</string>
+    <string name="txV_ocho">8</string>
+    <string name="txV_nueve">9</string>
+    <string name="txV_ce">ce</string>
+    <string name="txV_division">/</string>
+    <string name="txV_multiplicar">*</string>
+    <string name="txV_sumar">+</string>
+    <string name="txV_restar">-</string>
+    <string name="txV_resultado">0</string>
+
+</resources>
